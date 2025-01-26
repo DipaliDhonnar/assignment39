@@ -1,15 +1,58 @@
+
+body{
+    background-color: #faaefb;
+    margin: 0;
+    padding: 0;
+}
+
+.app-title{
+    text-align: center;
+}
+
+
+.board{
+    border: 1px solid #000;
+    width: fit-content;
+    margin: 40px auto;
+    background-color:#773bef;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+.current-player{
+    text-align: center;
+    font-size: 30px;
+}
+
+
 .box{
-    background-color: rgb(148, 148, 234);
+    background-color: #ffff;
     height: 100px;
     width: 100px;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
-.board{
-    width: fit-content;
-    margin: 150px auto;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0.3);
-    padding: 5px;
-}
+
 .row{
     display: flex;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: 2s;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+}
+
+.button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: #773bef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
